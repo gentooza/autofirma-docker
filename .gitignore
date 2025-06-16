@@ -1,2 +1,4 @@
 certificates/*
 !certificates/README.md
+documents/*
+!documents/README.md
