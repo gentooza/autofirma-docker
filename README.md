@@ -1,10 +1,13 @@
 # About
-This container runs a remote instance of firefox with autofirma installed in a sandboxed environment. It can be accessed by any web browser, since it runs a remote desktop server.
+This container runs a remote instance of firefox and autofirma in a sandboxed environment. It can be accessed by any web browser, since it runs a remote desktop server.
 
 # Usage
 + `./run.sh`
 + Access from any web browser at http://localhost:5800
 + If you need any certificates inside the autofirma environment, copy them inside the `certificates/` folder. They'll be available inside the container in `/config/certificates/` (`Home/certificates` in the integrated file picker).
++ you can close firefox window and by right clicking open it again or opening an Autofirma instance instead.
++ If you need any documents inside the autofirma environment, copy them inside the `documents/` folder. They'll be available inside the container in `/config/documents/` (`Home/documents` in the integrated file picker).
++ you can afterwards download them back, when signed, using the KasmVNC web GUI.
 
 ![](doc/image.png)
 # Motivation
